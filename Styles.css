@@ -1,0 +1,170 @@
+body{
+ 
+  color: black;
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* font-style: italic; */
+  font-size: medium;
+  height: 100%;
+}
+.bg{
+  background-image: url('Images/pexels-nataliya-vaitkevich-7615539.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  
+}
+.pageBody{
+  /* height: 800px; */
+  height: auto;
+  background-color: rgba(253, 249, 249, 0.586);
+}
+.navbar{
+      /* background-color: #FEED00; */
+      
+      background-color: rgb(3, 3, 142);
+      border-radius: 0%;
+      width: 100% ;
+      position: sticky; top: 0;
+      z-index: 9999;
+      font-weight: 400;
+      padding:0 2px;
+      
+  }
+  
+  
+  .navbar a:hover{
+      text-decoration: none;
+      background-color: rgba(8, 2, 52, 0.841);
+      color: rgb(251, 252, 251);
+      padding: 10px 20px;
+      border-radius: 1px;
+      /* border: rgba(4, 4, 151, 0.768) solid 1px; */
+  }
+  
+  .navbar a:active{
+    text-decoration: none;
+    background-color: rgb(9, 9, 9);
+    color: rgb(47, 255, 5);
+  }
+  
+  .navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    
+  }
+
+  footer{
+    background-color: rgb(56, 54, 54);
+    color: aliceblue;
+    /* position: sticky; bottom: 0; */
+}
+
+
+footer p{
+  text-align: center;
+  color: aliceblue;
+}
+
+.order{
+  width: 80%;
+  margin: auto;
+  height: 100px;
+}
+
+
+#pointer {
+  
+  width: 25%;
+  height: 50px;
+  position: relative;
+  background: #FEED00;
+  animation-name: entry;
+  animation-duration: 2s;
+  left: 38%;
+}
+#pointer:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 25px solid rgb(219, 227, 231);
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+}
+
+@keyframes entry{
+  0%   { left:0%; }
+  100%   { left:38%; }
+}
+/* #pointer:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 25px solid #FEED00;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+} */
+
+
+.parallelogram1 {
+	width: 10%;
+	height: 30px;
+	transform: skew(40deg);
+	background: #FEED00;
+}
+.parallelogram2 {
+  float: right;
+  display: block;
+	width: 20%;
+	height: 30px;
+	transform: skew(40deg);
+	background: #FEED00;
+  margin: 1px;
+}
+.parallelogram3 {
+  float: right;
+  display: block;
+	width: 30%;
+	height: 30px;
+	transform: skew(40deg);
+	background: #FEED00;
+  margin: 1px;
+}
+/* @keyframes paEntry{
+  0%   { right:0%; }
+  100%   { right:10%; }
+} */
+
+.typing-text {
+  /* font-family: monospace; */
+  /* font-weight: 600;
+  font-size: large; */
+  overflow: hidden; 
+  border-right: 0.15em solid black; 
+  white-space: nowrap; 
+  margin: 0 auto;
+  letter-spacing: 0.1em; 
+  animation:
+    typing 3s steps(10, end),
+    blink-caret 1s step-end infinite;
+  
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  10% { border-color: black }
+}
+
+
